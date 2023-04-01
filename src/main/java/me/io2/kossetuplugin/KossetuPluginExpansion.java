@@ -47,6 +47,11 @@ public class KossetuPluginExpansion extends PlaceholderExpansion {
                         if (debuffType.getJapaneseName().equalsIgnoreCase(s[1]) || debuffType.name().equalsIgnoreCase(s[1]))
                             targetType = debuffType;
                     }
+                    if (targetType == null) return "0:00";
+                    Long aLong = System.currentTimeMillis() - debuffData.debuffTime.get(targetType);
+                    long second = (aLong / 1000);
+                    long minute = (aLong / 60);
+                    return String.format("%d:%d", minute, second);
                 }
             }
         }
