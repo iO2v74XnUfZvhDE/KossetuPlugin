@@ -1,0 +1,9 @@
+FractureMinDist: 5
+LightBleedingMin: 5
+LightBleedingMax: 10
+HeavyBleeding: 15
+Pain: 3
+# Milli
+LightBleedingEffectTime: 50000
+HeavyBleedingEffectTime: 130000
+PainEffectTime: 300000

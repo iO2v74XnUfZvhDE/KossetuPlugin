@@ -1,0 +1,4 @@
+name: KossetuPlugin
+version: '${version}'
+main: me.io2.kossetuplugin.KossetuPlugin
+api-version: 1.16
